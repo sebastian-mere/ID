@@ -1,0 +1,329 @@
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  background-color: #2b2b2b;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(43, 43, 43, 1),
+    rgba(31, 31, 31, 1)
+  );
+  padding: 0 10%;
+}
+
+header img {
+  height: 40px;
+}
+
+header nav a {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 1rem;
+}
+
+header nav a:hover {
+  color: #9bf57f;
+  font-weight: 600;
+}
+
+main .heroBanner {
+  height: 50vh;
+  background: url(../img/banner1.webp);
+}
+
+main .heroBanner::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  background: url(../img/curva.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+main .intro .intro1 {
+  margin-top: 5%;
+  padding: 5% 10%;
+  background: linear-gradient(
+      to left,
+      rgba(43, 43, 43, 0) 0%,
+      rgba(43, 43, 43, 1) 40%
+    ),
+    url(../img/bg.png);
+  background-position: center, center;
+}
+
+main .intro .intro1 h1 {
+  font-size: 3rem;
+  width: 65%;
+  font-weight: 400;
+}
+
+main .intro .intro2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  padding: 0 10%;
+  background: linear-gradient(
+      to right,
+      rgba(43, 43, 43, 0) 0%,
+      rgba(43, 43, 43, 1) 40%
+    ),
+    url(../img/bg.png);
+  background-position: center, center;
+}
+
+main .intro .intro2 img {
+  width: 20%;
+}
+
+main .intro .intro2 h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  b {
+    color: #9bf57f;
+  }
+}
+
+main section {
+  padding: 10%;
+  border-bottom: black 1px solid;
+}
+
+main section h3 {
+  position: relative;
+  left: -5%;
+  font-size: 3rem;
+  font-weight: 300;
+  span {
+    color: #9bf57f;
+  }
+}
+
+main section .subtitulo {
+  font-style: italic;
+}
+
+.familiaProductos{
+    padding-bottom: 0;
+
+}
+
+section .familias {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+section .familias .box1 {
+  width: 20%;
+  margin: 130px auto;
+  background-color: #0091F4;
+  position: relative;
+  border-radius: 15px;
+  padding: 130px 20px 50px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 2rem;
+}
+
+section .familias .box1 img {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 180px;
+  transition: top 0.3s ease;
+}
+
+section .familias .box1:hover img {
+  top: -120px;
+}
+
+section .familias .box2 {
+  width: 20%;
+  margin: 130px auto;
+  background-color: #FF7639;
+  position: relative;
+  border-radius: 15px;
+  padding: 130px 20px 50px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 2rem;
+}
+
+section .familias .box2 img {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 180px;
+  transition: top 0.3s ease;
+}
+
+section .familias .box2:hover img {
+  top: -120px;
+}
+
+section .familias .box3 {
+    width: 20%;
+    margin: 130px auto;
+    background-color: #9DF77F;
+    position: relative;
+    border-radius: 15px;
+    padding: 130px 20px 50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  section .familias .box3 img {
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 180px;
+    transition: top 0.3s ease;
+  }
+  
+  section .familias .box3:hover img {
+    top: -120px;
+  }
+
+  section .familias .box4 {
+    width: 20%;
+    margin: 130px auto;
+    background-color: #FFE448;
+    position: relative;
+    border-radius: 15px;
+    padding: 130px 20px 50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  section .familias .box4 img {
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 180px;
+    transition: top 0.3s ease;
+  }
+  
+  section .familias .box4:hover img {
+    top: -120px;
+  }
+
+.whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  font-size: 40px;
+  color: white;
+  background-color: #25d366;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}

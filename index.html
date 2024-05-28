@@ -3,10 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="language" content="sp" />
+    <meta name="geo.country" content="AR" />
+    <meta name="geo.region" content="AR" />
+    <meta
+      name="geo.placename"
+      content="Argentina, Buenos Aires, Capital Federal"
+    />
+    <meta name="Geography" content="Argentina" />
+    <meta name="Country" content="AR" />
+    <meta name="city" content="Ciudad Autónoma de Buenos Aires" />
     <title>Document</title>
+    <meta name="description" content="descripcion" />
+    <meta name="keywords" content="keywords" />
+    <link rel="shortcut icon" type="image/ico" href="./favicon.ico" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -27,7 +48,7 @@
     </header>
 
     <main>
-        <div class="heroBanner"></div>
+      <div class="heroBanner"></div>
 
       <div class="intro">
         <div class="intro1">
@@ -47,109 +68,156 @@
         <div class="familias">
           <a href="#" class="box1">
             <img src="img/isop-clr.svg" alt="" />
-            <p>ALCOHOL ISOPROPÍLICO</p></a
+            <p>ALCOHOL <br> ISOPROPÍLICO</p></a
           >
           <a href="#" class="box2">
             <img src="img/soluc-fuen-clr.svg" alt="" />
-            <p>SOLUCIÓN DE FUENTE</p></a
+            <p>SOLUCIÓN<br> DE FUENTE</p></a
           >
           <a href="#" class="box3">
             <img src="img/limp-tin-clr.svg" alt="" />
-            <p>LIMPIA TINTAS</p></a
+            <p>LIMPIA<br> TINTAS</p></a
           >
           <a href="#" class="box4">
             <img src="img/limp-mant-clr.svg" alt="" />
-            <p>LIMPIA MANTILLAS</p></a
+            <p>LIMPIA<br> MANTILLAS</p></a
           >
         </div>
       </section>
 
-      <section>
+      <section class="comprar">
         <h3>CÓMO <span>COMPRAR</span></h3>
-        <p class="subtitulo">Lo poderoso de lo simple.</p>
+        <p class="subtitulo">
+          Recibí tus insumos en la comodidad de tu taller.
+        </p>
 
-        <div>
-          <img src="" alt="" />
-          <p>Escribinos al <b>Whatsapp</b>, tus productos están esperando.</p>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <p>Te <b>asesoraremos</b> en todo momento.</p>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <p>
-            Una vez confirmado el <b>pedido</b> te informaremos en cada etapa
-            del proceso.
-          </p>
+        <div class="pasos">
+          <div class="paso">
+            <img src="img/comprar-ico-1.svg" alt="Ícono de WhatsApp" />
+            <p>Escribinos al <b>Whatsapp</b>, tus productos están esperando.</p>
+          </div>
+          <div class="separador"></div>
+          <div class="paso">
+            <img src="img/comprar-ico-2.svg" alt="Ícono de asesoramiento" />
+            <p>Te <b>asesoraremos</b> en todo momento.</p>
+          </div>
+          <div class="separador"></div>
+          <div class="paso">
+            <img src="img/comprar-ico-3.svg" alt="Ícono de pedido" />
+            <p>
+              Una vez confirmado el <b>pedido</b> te informaremos en cada etapa
+              del proceso.
+            </p>
+          </div>
         </div>
       </section>
 
       <section>
         <h3>NUESTRO <span>EQUIPO</span></h3>
-        <div>
+        <div class="nosotros">
           <img src="img/img.jpg" alt="" />
-          <p>
-            <b>Si usas nuestros químicos, das una buena impresión.</b>
-            Nuestras exclusivas preparaciones te permiten lograr una elevada
-            calidad de impresión con bajo desperdicio. Resultados que derivan de
-            asesorarte cada vez que lo necesites. Contamos con stock para
-            entregas inmediatas y la atención personalizada que te mereces Nos
-            proponemos ser tu mejor alternativa en calidad y servicio para el
-            abastecimiento de los químicos que tu proceso necesita.
-            <span>Nos importan tus impresiones.</span>
-            La calidad y la productividad son nuestra obsesión.
-          </p>
-        </div>
-        <div>
-          <h4>CONFÍAN EN NOSOTROS</h4>
-          <div><img src="" alt="" /></div>
+          <div>
+            <p>
+              <b>Si usas nuestros químicos, das una buena impresión.</b><br />
+              Nuestras exclusivas preparaciones te permiten lograr una elevada
+              calidad de impresión con bajo desperdicio. Resultados que derivan
+              de asesorarte cada vez que lo necesites. Contamos con stock para
+              entregas inmediatas y la atención personalizada que te mereces.
+            </p>
+            <p>
+              Nos proponemos ser tu mejor alternativa en calidad y servicio para
+              el abastecimiento de los químicos que tu proceso necesita.
+            </p>
+            <p><span>Nos importan tus impresiones.</span></p>
+            <p>La calidad y la productividad son nuestra obsesión.</p>
+          </div>
         </div>
       </section>
+
+      <div class="clientes">
+        <h4>CONFÍAN EN NOSOTROS</h4>
+        <div class="logosClientes">
+          <div class="cliente">
+            <img src="img/logopartner.png" alt="" />
+          </div>
+          <div class="cliente">
+            <img src="img/logopartner.png" alt="" />
+          </div>
+          <div class="cliente">
+            <img src="img/logopartner.png" alt="" />
+          </div>
+          <div class="cliente">
+            <img src="img/logopartner.png" alt="" />
+          </div>
+          <div class="cliente">
+            <img src="img/logopartner.png" alt="" />
+          </div>
+          <div class="cliente">
+            <img src="img/logopartner.png" alt="" />
+          </div>
+          <div class="cliente">
+            <img src="img/logopartner.png" alt="" />
+          </div>
+          <div class="cliente">
+            <img src="img/logopartner.png" alt="" />
+          </div>
+          <div class="cliente">
+            <img src="img/logopartner.png" alt="" />
+          </div>
+        </div>
+      </div>
 
       <section>
         <h3><span>BLOG</span></h3>
-        <div>
+        <div class="blog">
           <img src="img/img.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-            velit esse molestie consequat, vel illum dolore eu feugiat nulla
-            facilisis at vero eros et accumsan et iusto odio dignissim qui
-            blandit praesent luptatum zzril delenit augue duis dolore te feugait
-            nulla facilisi.
-          </p>
-          <button>VER MÁS</button>
+          <div class="texto">
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+              volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+              ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+              consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+              velit esse molestie consequat, vel illum dolore eu feugiat nulla
+              facilisis at vero eros et accumsan et iusto odio dignissim qui
+              blandit praesent luptatum zzril delenit augue duis dolore te feugait
+              nulla facilisi.
+            </p>
+            <button>VER MÁS</button>
+          </div>
         </div>
       </section>
 
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/ghPczSDgzZQ?si=OMURfRIlqh6dL9ZI"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+      <div class="video">
+        <div class="contenedor">
+            <iframe
+            height="100%"
+            width="100%"
+              src="https://www.youtube.com/embed/ghPczSDgzZQ?si=OMURfRIlqh6dL9ZI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+        </div>
+      </div>
     </main>
 
     <footer>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#productos">Productos</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#blog">Blog</a>
-      </nav>
-      <div>
-        <i class="fa-solid fa-location-dot"></i>
-        <i class="fa-regular fa-envelope"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-        <i class="fa-brands fa-instagram"></i>
+      <div class="botones">
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#productos">Productos</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#blog">Blog</a>
+        </nav>
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <i class="fa-regular fa-envelope"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
       </div>
       <p>© 2024 ID Químicos. Todos los derechos reservados.</p>
     </footer>
@@ -162,5 +230,39 @@
         ><i class="fa-brands fa-whatsapp"></i
       ></a>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(".logosClientes").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        variableWidth: true,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 2000,
+        mobileFirst: true,
+        infinite: true,
+        centerMode: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 7,
+              slidesToScroll: 5,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 3,
+            },
+          },
+        ],
+      });
+    </script>
   </body>
 </html>

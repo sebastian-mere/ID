@@ -70,6 +70,14 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'AkzidenzGrotesk';
+  src: url('../fonts/AkzidenzGrotesk-BoldCondItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -117,8 +125,15 @@ header nav a:hover {
 }
 
 main .heroBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50vh;
-  background: url(../img/banner1.webp);
+  overflow: hidden;
+}
+
+main .heroBanner  img{
+  width: 100vw;
 }
 
 main .heroBanner::after {
@@ -184,13 +199,17 @@ main section {
   border-bottom: black 1px solid;
 }
 
-main section h3 {
-  position: relative;
-  left: -5%;
+main section h3{
+  font-family: "AkzidenzGrotesk", sans-serif;
+  font-weight: 700;
+  font-style: italic;
   font-size: 3rem;
   font-weight: 300;
-  span {
-    color: #9bf57f;
+  span{
+    font-family: "AkzidenzGrotesk", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #9bf57f;
   }
 }
 
@@ -206,18 +225,24 @@ section .familias {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  font-size: clamp(1rem, 2vw, 2rem);
+  text-align: center;
+  p{
+    font-family: "AkzidenzGrotesk", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: black;
+  }
 }
 
 section .familias .box1 {
-  width: 20%;
-  margin: 130px auto;
+  width: 25%;
+  margin: 130px 10px;
   background-color: #0091f4;
   position: relative;
   border-radius: 15px;
-  padding: 130px 20px 50px 20px;
+  padding: 130px 10px 50px;
   box-sizing: border-box;
-  text-align: center;
-  font-size: 2rem;
 }
 
 section .familias .box1 img {
@@ -235,15 +260,13 @@ section .familias .box1:hover img {
 }
 
 section .familias .box2 {
-  width: 20%;
-  margin: 130px auto;
+  width: 25%;
+  margin: 130px 10px;
   background-color: #ff7639;
   position: relative;
   border-radius: 15px;
-  padding: 130px 20px 50px 20px;
+  padding: 130px 10px 50px;
   box-sizing: border-box;
-  text-align: center;
-  font-size: 2rem;
 }
 
 section .familias .box2 img {
@@ -261,15 +284,13 @@ section .familias .box2:hover img {
 }
 
 section .familias .box3 {
-  width: 20%;
-  margin: 130px auto;
+  width: 25%;
+  margin: 130px 10px;
   background-color: #9df77f;
   position: relative;
   border-radius: 15px;
-  padding: 130px 20px 50px 20px;
+  padding: 130px 10px 50px;
   box-sizing: border-box;
-  text-align: center;
-  font-size: 2rem;
 }
 
 section .familias .box3 img {
@@ -287,15 +308,13 @@ section .familias .box3:hover img {
 }
 
 section .familias .box4 {
-  width: 20%;
-  margin: 130px auto;
+  width: 25%;
+  margin: 130px 10px;
   background-color: #ffe448;
   position: relative;
   border-radius: 15px;
-  padding: 130px 20px 50px 20px;
+  padding: 130px 10px 50px;
   box-sizing: border-box;
-  text-align: center;
-  font-size: 2rem;
 }
 
 section .familias .box4 img {

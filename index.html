@@ -13,7 +13,7 @@
     <meta name="Geography" content="Argentina" />
     <meta name="Country" content="AR" />
     <meta name="city" content="Ciudad Autónoma de Buenos Aires" />
-    <title>Document</title>
+    <title>ID Químicos</title>
     <meta name="description" content="descripcion" />
     <meta name="keywords" content="keywords" />
     <link rel="shortcut icon" type="image/ico" href="./favicon.ico" />
@@ -38,7 +38,7 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header id="home">
       <a href="#home"><img src="img/logo-id.svg" alt="" /></a>
       <nav>
         <a href="#productos">Productos</a>
@@ -48,7 +48,11 @@
     </header>
 
     <main>
-      <div class="heroBanner"></div>
+      <div class="heroBanner">
+        <img src="img/banner1.webp" alt="">
+        <img src="img/banner1.webp" alt="">
+        <img src="img/banner1.webp" alt="">
+      </div>
 
       <div class="intro">
         <div class="intro1">
@@ -61,12 +65,12 @@
         </div>
       </div>
 
-      <section class="familiaProductos">
+      <section class="familiaProductos" id="productos">
         <h3>FAMILIA DE <span>PRODUCTOS</span></h3>
         <p class="subtitulo">Lo poderoso de lo simple.</p>
 
         <div class="familias">
-          <a href="#" class="box1">
+          <a href="pages/familia-alcohol-isopropilico.html" class="box1">
             <img src="img/isop-clr.svg" alt="" />
             <p>ALCOHOL <br> ISOPROPÍLICO</p></a
           >
@@ -112,7 +116,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="nosotros">
         <h3>NUESTRO <span>EQUIPO</span></h3>
         <div class="nosotros">
           <img src="img/img.jpg" alt="" />
@@ -167,7 +171,7 @@
         </div>
       </div>
 
-      <section>
+      <section id="blog">
         <h3><span>BLOG</span></h3>
         <div class="blog">
           <img src="img/img.jpg" alt="" />
@@ -262,6 +266,18 @@
             },
           },
         ],
+      });
+      $(".heroBanner").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        variableWidth: true,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 5000,
+        mobileFirst: true,
+        infinite: true,
+        centerMode: true,
       });
     </script>
   </body>

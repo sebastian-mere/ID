@@ -1,0 +1,128 @@
+.banner {
+  position: relative;
+  height: 350px;
+  background: url(../img/bg-isop.png) no-repeat center center/cover;
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 30vh;
+    }
+    h1 {
+      font-family: "AkzidenzGrotesk", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 6rem;
+      line-height: 5rem;
+      padding-left: 1.5rem;
+    }
+  }
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  background: url(../img/curva.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+section h2 {
+  font-family: "AkzidenzGrotesk", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+  border-bottom: #9bf57f solid 3px;
+  span {
+    font-family: "AkzidenzGrotesk", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #9bf57f;
+  }
+}
+
+.familia {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem;
+  img {
+    width: 45%;
+  }
+  div {
+    padding-left: 2rem;
+    p {
+      font-size: 1.1rem;
+      padding: 0.5rem 0;
+      span {
+        font-size: 1.3rem;
+        font-style: italic;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #9bf57f;
+      }
+    }
+    p:last-of-type {
+      padding-bottom: 0;
+    }
+    ul {
+      font-size: 1.1rem;
+      list-style: none;
+      font-weight: 700;
+    }
+  }
+}
+
+.productos{
+    padding: 2rem 0;
+    div:last-of-type {
+        border-bottom: 0;
+      }
+}
+.producto {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 0;
+    border-bottom: #141414 1px solid;
+  img {
+    height: 65px;
+  }
+  h3 {
+    position: unset;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+  }
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #9bf57f;
+  }
+  a{
+    text-align: center;
+    border: 0;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #5D2BF4;
+    i{
+        color: #9bf57f;
+    }
+  }
+  
+}

@@ -1,7 +1,9 @@
-.banner {
+.banners {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 350px;
-  background: url(../img/bg-isop.png) no-repeat center center/cover;
   .banner {
     display: flex;
     justify-content: center;
@@ -18,6 +20,10 @@
       padding-left: 1.5rem;
     }
   }
+}
+
+.bannerAlcohol {
+  background: url(../img/bg-isop.png) no-repeat center center/cover;
 }
 
 .banner::after {
@@ -81,20 +87,20 @@ section h2 {
   }
 }
 
-.productos{
-    padding: 2rem 0;
-    div:last-of-type {
-        border-bottom: 0;
-      }
+.productos {
+  padding: 2rem 0;
+  div:last-of-type {
+    border-bottom: 0;
+  }
 }
 .producto {
-    display: grid;
-    grid-template-columns: 1fr 6fr 1.5fr;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 3rem 0;
-    border-bottom: #141414 1px solid;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1.5fr;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 0;
+  border-bottom: #141414 1px solid;
   img {
     height: 65px;
   }
@@ -112,17 +118,16 @@ section h2 {
     font-size: 1.5rem;
     color: #9bf57f;
   }
-  a{
+  a {
     text-align: center;
     border: 0;
     border-radius: 10px;
     padding: 1rem 1rem;
     font-size: 1.2rem;
     color: white;
-    background-color: #5D2BF4;
-    i{
-        color: #9bf57f;
+    background-color: #5d2bf4;
+    i {
+      color: #9bf57f;
     }
   }
-  
 }

@@ -1,0 +1,174 @@
+main section{
+  padding-bottom: 2%;
+  border-bottom: 0;
+}
+
+section h2 {
+  text-transform: uppercase;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+main section h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+  span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #9bf57f;
+  }
+}
+
+.descripcion {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 3rem;
+  img {
+    width: 10%;
+  }
+  .descProducto {
+    width: 75%;
+    margin-left: 4rem;
+    p {
+      padding-bottom: 1rem;
+    }
+    .identificacion {
+      p {
+        padding-bottom: 0;
+      }
+    }
+    .separador {
+      padding: 1rem 0;
+      border-bottom: #141414 2px solid;
+    }
+    .advertencias {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding-top: 2rem;
+      div {
+        display: flex;
+        align-items: center;
+        p {
+          padding-left: 1rem;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.presentaciones {
+  .presentacion {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  h3 {
+    font-family: "AkzidenzGrotesk", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: #9bf57f 2px solid;
+  }
+  div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 70%;
+    img {
+      height: 100px;
+    }
+    p {
+      padding: 1.5rem;
+    }
+  }
+}
+
+.accordion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  background-color: #5d2bf4;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0px 2px 5px #141414;
+}
+
+.accordion-header h4 {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+}
+
+.accordion-header i {
+  position: relative;
+  bottom: 0.3rem;
+  font-size: 2rem;
+  color: #9bf57f;
+}
+
+.accordion-content {
+  width: 97%;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #3f3f3fc0;
+  padding: 0 2rem;
+  border-radius: 0 0 15px 15px;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+  margin-bottom: 1rem;
+}
+
+.accordion-content h5 {
+  color: #9bf57f;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.accordion-content h6 {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.accordion-content p:first-of-type {
+  margin-top: 1.5rem;
+}
+
+.accordion-content .nota {
+  font-size: 0.9rem;
+  font-style: italic;
+  strong {
+    color: #9bf57f;
+  }
+  margin-bottom: 2rem;
+}
+
+.accordion-content ul, .accordion-content .end{
+  margin-bottom: 2rem;
+}
+
+.accordion-content img{
+  width: 6rem;
+  margin-bottom: 1rem;
+}

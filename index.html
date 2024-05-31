@@ -39,19 +39,24 @@
   </head>
   <body>
     <header id="home">
-      <a href="#home"><img src="img/logo-id.svg" alt="" /></a>
-      <nav>
-        <a href="#productos">Productos</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#blog">Blog</a>
+      <a href="index.html"><img src="img/logo-id.svg" alt="Logo" /></a>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav id="nav-menu">
+        <a href="index.html#productos">Productos</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#blog">Blog</a>
       </nav>
     </header>
 
     <main>
       <div class="heroBanner">
-        <img src="img/banner1.webp" alt="">
-        <img src="img/banner1.webp" alt="">
-        <img src="img/banner1.webp" alt="">
+        <img src="img/banner1.webp" alt="" />
+        <img src="img/banner1.webp" alt="" />
+        <img src="img/banner1.webp" alt="" />
       </div>
 
       <div class="intro">
@@ -72,19 +77,31 @@
         <div class="familias">
           <a href="pages/familia-alcohol-isopropilico.html" class="box1">
             <img src="img/isop-clr.svg" alt="" />
-            <p>ALCOHOL <br> ISOPROPÍLICO</p></a
+            <p>
+              ALCOHOL <br />
+              ISOPROPÍLICO
+            </p></a
           >
           <a href="#" class="box2">
             <img src="img/soluc-fuen-clr.svg" alt="" />
-            <p>SOLUCIÓN<br> DE FUENTE</p></a
+            <p>
+              SOLUCIÓN<br />
+              DE FUENTE
+            </p></a
           >
           <a href="#" class="box3">
             <img src="img/limp-tin-clr.svg" alt="" />
-            <p>LIMPIA<br> TINTAS</p></a
+            <p>
+              LIMPIA<br />
+              TINTAS
+            </p></a
           >
           <a href="#" class="box4">
             <img src="img/limp-mant-clr.svg" alt="" />
-            <p>LIMPIA<br> MANTILLAS</p></a
+            <p>
+              LIMPIA<br />
+              MANTILLAS
+            </p></a
           >
         </div>
       </section>
@@ -178,14 +195,14 @@
           <div class="texto">
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-              volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-              ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-              velit esse molestie consequat, vel illum dolore eu feugiat nulla
-              facilisis at vero eros et accumsan et iusto odio dignissim qui
-              blandit praesent luptatum zzril delenit augue duis dolore te feugait
-              nulla facilisi.
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+              consequat. Duis autem vel eum iriure dolor in hendrerit in
+              vulputate velit esse molestie consequat, vel illum dolore eu
+              feugiat nulla facilisis at vero eros et accumsan et iusto odio
+              dignissim qui blandit praesent luptatum zzril delenit augue duis
+              dolore te feugait nulla facilisi.
             </p>
             <button>VER MÁS</button>
           </div>
@@ -194,16 +211,16 @@
 
       <div class="video">
         <div class="contenedor">
-            <iframe
+          <iframe
             height="100%"
             width="100%"
-              src="https://www.youtube.com/embed/ghPczSDgzZQ?si=OMURfRIlqh6dL9ZI"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            src="https://www.youtube.com/embed/ghPczSDgzZQ?si=OMURfRIlqh6dL9ZI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </main>
@@ -239,6 +256,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript">
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("nav-active");
+        hamburger.classList.toggle("change");
+      });
       $(".logosClientes").slick({
         slidesToShow: 1,
         slidesToScroll: 1,

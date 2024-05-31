@@ -131,3 +131,96 @@ section h2 {
     }
   }
 }
+
+@media (max-width: 992px){
+  .familia {
+    align-items: start;
+    flex-direction: column;
+    padding: 4rem 0;
+    img {
+      width: 60%;
+    }
+    div {
+      padding-left: 0;
+      padding-top: 2rem;
+    }
+  }
+  .producto {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 0;
+    border-bottom: #141414 1px solid;
+    img {
+      height: 65px;
+    }
+    h3 {
+      position: unset;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 1.5rem;
+      color: #9bf57f;
+    }
+    a {
+      text-align: center;
+      border: 0;
+      border-radius: 10px;
+      padding: 1rem 1rem;
+      font-size: 1rem;
+      color: white;
+      background-color: #5d2bf4;
+      i {
+        color: #9bf57f;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px){
+  .banners {
+    .banner {
+      img {
+        height: 20vw;
+      }
+      h1 {
+        font-family: "AkzidenzGrotesk", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: clamp(3rem, 10vw, 5rem);
+        line-height: clamp(2.5rem, 10vw, 4rem);
+        padding-left: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px){
+  .familia {
+    img {
+        width: 100%;
+    }
+    p{font-size:  1rem;}
+}
+.producto {
+  grid-template-columns: 2fr 1fr;
+  h3{
+    font-size: 1.2rem;
+  }
+  h4{
+    font-size: 1.1rem;
+  }
+  img {
+      display: none;
+  }
+}
+}

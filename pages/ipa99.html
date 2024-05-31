@@ -41,8 +41,13 @@
   </head>
   <body>
     <header id="home">
-      <a href="../index.html"><img src="../img/logo-id.svg" alt="" /></a>
-      <nav>
+      <a href="../index.html"><img src="../img/logo-id.svg" alt="Logo" /></a>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav id="nav-menu">
         <a href="../index.html#productos">Productos</a>
         <a href="../index.html#nosotros">Nosotros</a>
         <a href="../index.html#blog">Blog</a>
@@ -64,7 +69,11 @@
         <h2>alcohol isopropílico <span>NORMAL</span></h2>
         <h3><span>IPA#99</span> Isopropyl Alcohol</h3>
         <div class="descripcion">
-          <img src="../img/isop-descripcion.svg" alt="" />
+          <img
+            class="iconoDescripcion"
+            src="../img/isop-descripcion.svg"
+            alt=""
+          />
           <div class="descProducto">
             <p>
               Alcohol Isopropílico Normal para uso industrial de muy alta
@@ -547,6 +556,14 @@
     </div>
 
     <script type="text/javascript">
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("nav-active");
+        hamburger.classList.toggle("change");
+      });
+
       document.querySelectorAll(".accordion-header").forEach((header) => {
         header.addEventListener("click", () => {
           const accordionContent = header.nextElementSibling;

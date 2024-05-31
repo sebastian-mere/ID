@@ -1,4 +1,4 @@
-main section{
+main section {
   padding-bottom: 2%;
   border-bottom: 0;
 }
@@ -164,11 +164,57 @@ main section h3 {
   margin-bottom: 2rem;
 }
 
-.accordion-content ul, .accordion-content .end{
+.accordion-content ul,
+.accordion-content .end {
   margin-bottom: 2rem;
 }
 
-.accordion-content img{
+.accordion-content img {
   width: 6rem;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 1200px) {
+  .presentaciones {
+    div {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .descripcion {
+    img {
+      width: 20%;
+    }
+  }
+  .accordion-header h4 {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+  }
+  .accordion-header i {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+  }
+}
+
+@media (max-width: 768px){
+  .descripcion {
+    .descProducto {
+      width: 100%;
+      margin-left: 0;
+  }
+  img {
+    width: 25%;
+  }
+    .iconoDescripcion {
+      display: none;
+    }
+  }
+
+  .presentaciones {
+    .presentacion {
+      flex-direction: column;
+      img{
+        padding:1rem
+      }
+    }
+}}

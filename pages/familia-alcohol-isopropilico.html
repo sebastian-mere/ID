@@ -40,8 +40,13 @@
   </head>
   <body>
     <header id="home">
-      <a href="../index.html"><img src="../img/logo-id.svg" alt="" /></a>
-      <nav>
+      <a href="../index.html"><img src="../img/logo-id.svg" alt="Logo" /></a>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav id="nav-menu">
         <a href="../index.html#productos">Productos</a>
         <a href="../index.html#nosotros">Nosotros</a>
         <a href="../index.html#blog">Blog</a>
@@ -86,25 +91,26 @@
         <h2>ALCOHOL <span>ISOPROPÍLICO</span></h2>
 
         <div class="productos">
-            <div class="producto">
-              <img src="../img/icon-isop.svg" alt="" />
-              <div>
-                <h3>Alcohol Isopropílico Normal</h3>
-                <h4>IPA#99</h4>
-              </div>
-              <a href="ipa99.html">Ver más <i class="fa-solid fa-caret-right"></i></a>
+          <div class="producto">
+            <img src="../img/icon-isop.svg" alt="" />
+            <div>
+              <h3>Alcohol Isopropílico Normal</h3>
+              <h4>IPA#99</h4>
             </div>
-            <div class="producto">
-              <img src="../img/icon-isop.svg" alt="" />
-              <div>
-                <h3>Alcohol Isopropílico para Impresión</h3>
-                <h4>IPA#ISO</h4>
-              </div>
-              <a href="">Ver más <i class="fa-solid fa-caret-right"></i></a>
+            <a href="ipa99.html"
+              >Ver más <i class="fa-solid fa-caret-right"></i
+            ></a>
+          </div>
+          <div class="producto">
+            <img src="../img/icon-isop.svg" alt="" />
+            <div>
+              <h3>Alcohol Isopropílico para Impresión</h3>
+              <h4>IPA#ISO</h4>
             </div>
+            <a href="">Ver más <i class="fa-solid fa-caret-right"></i></a>
+          </div>
         </div>
       </section>
-
     </main>
 
     <footer>
@@ -133,5 +139,15 @@
         ><i class="fa-brands fa-whatsapp"></i
       ></a>
     </div>
+
+    <script type="text/javascript">
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("nav-active");
+        hamburger.classList.toggle("change");
+      });
+    </script>
   </body>
 </html>

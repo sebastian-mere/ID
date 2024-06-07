@@ -13,12 +13,13 @@
     <meta name="Geography" content="Argentina" />
     <meta name="Country" content="AR" />
     <meta name="city" content="Ciudad Autónoma de Buenos Aires" />
-    <title>ID Químicos - Alcohol Isopropílico</title>
+    <title>ID Químicos - LT#100</title>
     <meta name="description" content="descripcion" />
     <meta name="keywords" content="keywords" />
-    <link rel="shortcut icon" type="image/ico" href="../favicon.ico" />
+    <link rel="shortcut icon" type="../image/ico" href="../favicon.ico" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/familia.css" />
+    <link rel="stylesheet" href="../css/producto.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,60 +55,66 @@
     </header>
 
     <main>
-      <div class="banners bannerAlcohol">
+      <div class="banners bannerTintas">
         <div class="banner">
-          <img src="../img/isop-clr.svg" alt="" />
+          <img src="../img/limp-tin-clr.svg" alt="" />
           <h1>
-            ALCOHOL <br />
-            ISOPROPÍLICO
+            LIMPIA <br />
+            TINTAS
           </h1>
         </div>
       </div>
 
       <section>
-        <h2>FAMILIA DE <span>PRODUCTOS</span></h2>
-        <div class="familia">
-          <img src="../img/familia.svg" alt="" />
-          <div>
+        <h2>SGA Limpiatintas</h2>
+        <h3><span>LT#100</span></h3>
+        <div class="descripcion">
+          <img
+            class="iconoDescripcion"
+            src="../img/limp-descripcion.svg"
+            alt=""
+          />
+          <div class="descProducto">
             <p>
-              Nuestros productos se organizan en <b>4 familias</b> según sus
-              usos.
+              Líquido para limpieza de tintas con secado extra rápido y bajo
+              olor. Recomendado para remover tintas de tinteros, cilindros
+              metálicos y partes generales de la máquina.
             </p>
-            <p><span>Lo poderoso de lo simple.</span></p>
-
-            <p>Cuatro familias de productos organizadas por función:</p>
-
-            <ul>
-              <li>Alcohol Isopropílico</li>
-              <li>Solución de fuente</li>
-              <li>Limpia Tintas</li>
-              <li>Limpia mantillas</li>
-            </ul>
+            
+          </div>
+        </div>
+        <div class="presentaciones">
+          <h3>PRESENTACIONES</h3>
+          <div class="presentacion">
+            <div>
+              <img src="../img/icono-20l.svg" alt="" />
+              <p>
+                Bidón Plástico Blanco con tapa precinto por <b>20 litros</b>.
+              </p>
+            </div>
+            <div>
+              <img src="../img/icono-200l.svg" alt="" />
+              <p>
+                Tambor Metálico con 2 bocas y precintos de seguridad por
+                <b>200 litros</b>.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section>
-        <h2>ALCOHOL <span>ISOPROPÍLICO</span></h2>
-
-        <div class="productos">
-          <div class="producto">
-            <img src="../img/icon-isop.svg" alt="" />
-            <div>
-              <h3>Alcohol Isopropílico Normal</h3>
-              <h4>IPA#99</h4>
-            </div>
-            <a href="ipa99.html"
-              >Ver más <i class="fa-solid fa-caret-right"></i
-            ></a>
+        <div class="accordion">
+          <div class="accordion-header">
+            <h4>MODO DE USO</h4>
+            <i class="fa fa-sort-down"></i>
           </div>
-          <div class="producto">
-            <img src="../img/icon-isop.svg" alt="" />
-            <div>
-              <h3>Alcohol Isopropílico para Impresión</h3>
-              <h4>IPA#ISO</h4>
-            </div>
-            <a href="ipa-iso.html">Ver más <i class="fa-solid fa-caret-right"></i></a>
+          <div class="accordion-content">
+            <p class="end">Aplicar con un paño sobre la superficie a limpiar,
+              el líquido removerá fácilmente residuos de tinta
+              de la superficie y evaporara rápidamente con
+              aroma suave y agradable sin sofocar al usuario.
+              </p>
           </div>
         </div>
       </section>
@@ -147,6 +154,22 @@
       hamburger.addEventListener("click", () => {
         navMenu.classList.toggle("nav-active");
         hamburger.classList.toggle("change");
+      });
+
+      document.querySelectorAll(".accordion-header").forEach((header) => {
+        header.addEventListener("click", () => {
+          const accordionContent = header.nextElementSibling;
+          const accordionIcon = header.querySelector("i");
+
+          if (accordionContent.style.maxHeight) {
+            accordionContent.style.maxHeight = null;
+            accordionIcon.classList.remove("rotate");
+          } else {
+            accordionContent.style.maxHeight =
+              accordionContent.scrollHeight + "px";
+            accordionIcon.classList.add("rotate");
+          }
+        });
       });
     </script>
   </body>

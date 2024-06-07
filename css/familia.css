@@ -26,6 +26,18 @@
   background: url(../img/bg-isop.png) no-repeat center center/cover;
 }
 
+.bannerFuentes {
+  background: url(../img/bg-sol-fnt.png) no-repeat center center/cover;
+}
+
+.bannerTintas {
+  background: url(../img/bg-limp-tint.png) no-repeat center center/cover;
+}
+
+.bannerMantilla {
+  background: url(../img/bg-limp-mant.png) no-repeat center center/cover;
+}
+
 .banner::after {
   content: "";
   position: absolute;

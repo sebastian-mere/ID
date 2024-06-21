@@ -142,6 +142,37 @@ header nav a:hover {
   transition: 0.4s;
 }
 
+#nav-menu .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#nav-menu .dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgba(43, 43, 43, 1),
+    rgba(31, 31, 31, 1)
+  );
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: -1.3rem;
+  text-align: center;
+  z-index: 1;
+}
+
+#nav-menu .dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#nav-menu .dropdown:hover .dropdown-content {
+  display: block;
+  padding: 1rem;
+}
+
 main .heroBanner {
   display: flex;
   justify-content: center;
@@ -202,6 +233,7 @@ main .intro .intro2 {
 
 main .intro .intro2 img {
   width: 20%;
+  padding: 2rem;
 }
 
 main .intro .intro2 h2 {
@@ -554,46 +586,75 @@ footer {
   .hamburger {
     display: flex;
   }
+
+  .nav-active {
+    display: flex !important;
+  }
+
+  #nav-menu .dropdown-content {
+    position: static;
+    display: block;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  #nav-menu .dropdown-content a {
+    color: white;
+  }
+
+  #nav-menu .dropdown-content a:hover {
+    color: #9bf57f;
 }
 
-.nav-active {
-  display: flex !important;
+#nav-menu .dropdown:hover .dropdown-content {
+  padding: 0;
 }
 
-.change .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-8px, 6px);
-}
+  #nav-menu.active .dropdown-content {
+    display: block;
+  }
 
-.change .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.change .bar:nth-child(3) {
-  transform: rotate(45deg) translate(-8px, -6px);
-}
-
-section .familias {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-section .familias .box1,
-section .familias .box2 {
-  bottom: -80px;
-}
-section .familias .box1,
-section .familias .box2,
-section .familias .box3,
-section .familias .box4 {
-  width: 90%;
-}
-.comprar .pasos {
-  & .paso {
-    img {
-      height: 80px;
-      margin: 3rem 0 2rem;
+  .dropdown-button {
+    display: none;
+  }
+  
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -6px);
+  }
+  
+  section .familias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  section .familias .box1,
+  section .familias .box2 {
+    bottom: -80px;
+  }
+  section .familias .box1,
+  section .familias .box2,
+  section .familias .box3,
+  section .familias .box4 {
+    width: 90%;
+  }
+  .comprar .pasos {
+    & .paso {
+      img {
+        height: 80px;
+        margin: 3rem 0 2rem;
+      }
     }
   }
 }
+
+
 
 @media (max-width: 576px) {
   main .intro .intro1 h1 {

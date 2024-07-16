@@ -179,10 +179,11 @@ main .heroBanner {
   align-items: center;
   height: 50vh;
   overflow: hidden;
+  position: relative;
 }
 
 main .heroBanner img {
-  width: 100vw;
+  width: 100%;
 }
 
 main .heroBanner::after {
@@ -426,7 +427,7 @@ section .familias .box4:hover img {
   text-align: justify;
   padding: 3% 0;
   img {
-    width: 50%;
+    width: 30%;
   }
   p {
     padding: 0.5rem 2rem;
@@ -533,7 +534,7 @@ footer {
   .blog {
     flex-direction: column;
     img {
-      width: 100%;
+      width: 50%;
       padding-bottom: 1rem;
     }
     p {
@@ -575,7 +576,7 @@ footer {
     backdrop-filter: blur(5px);
     z-index: 1000;
   }
-
+  
   nav a {
     font-size: 1.2rem !important;
     padding: 1rem !important;
@@ -629,6 +630,12 @@ footer {
   .change .bar:nth-child(3) {
     transform: rotate(45deg) translate(-8px, -6px);
   }
+
+  main .heroBanner img {
+    width: auto;
+    height: 80vh;
+  }
+  
   
   section .familias {
     display: grid;
